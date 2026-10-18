@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MONDRIAAN FUEL · 个人健身餐定制</title>
+  <meta name="description" content="荷兰风格派视觉语言的个人健身餐定制网站：3D形象、营养计算、饮食打卡、运动整合与智能食谱" />
+  <link rel="stylesheet" href="./css/destijl.css?v=20261017h" />
+</head>
+<body>
+  <!-- ============ APP SHELL ============ -->
+  <div id="app" class="app">
+
+    <!-- 侧边导航（桌面） -->
+    <aside class="side-nav" id="sideNav">
+      <div class="brand">
+        <div class="brand-squares">
+          <span class="sq sq-r"></span><span class="sq sq-w"></span><span class="sq sq-y"></span>
+          <span class="sq sq-b"></span><span class="sq sq-k"></span><span class="sq sq-w"></span>
+          <span class="sq sq-y"></span><span class="sq sq-w"></span><span class="sq sq-r"></span>
+        </div>
+        <div class="brand-text">
+          <h1>MONDRIAAN<br/>FUEL</h1>
+          <p>几何营养研究所</p>
+        </div>
+      </div>
+      <nav class="nav-list" id="navList"><!-- JS 注入 --></nav>
+      <div class="side-foot">
+        <div class="rule-chip" id="ruleChip">《中国居民膳食指南》2022</div>
+        <div class="privacy-chip">🔒 全部数据仅存于本机浏览器</div>
+      </div>
+    </aside>
+
+    <!-- 主区域 -->
+    <div class="main-wrap">
+      <header class="topbar">
+        <div class="topbar-title">
+          <span class="tb-block tb-r"></span>
+          <span class="tb-block tb-y"></span>
+          <span class="tb-block tb-b"></span>
+          <h2 id="pageTitle">总览</h2>
+        </div>
+        <div class="topbar-meta">
+          <span id="todayStr">—</span>
+          <span class="meta-sep">/</span>
+          <span id="weekdayStr">—</span>
+        </div>
+      </header>
+
+      <main id="view" class="view"><!-- 视图注入 --></main>
+    </div>
+  </div>
+
+  <!-- 底部导航（移动） -->
+  <nav class="bottom-nav" id="bottomNav"><!-- JS 注入 --></nav>
+
+  <!-- 全局弹层容器 -->
+  <div id="modalRoot"></div>
+  <div id="toastRoot"></div>
+
+  <script src="./js/data.js?v=20261017h"></script>
+  <script src="./js/engine.js?v=20261017h"></script>
+  <script src="./js/online.js?v=20261017h"></script>
+  <script src="./js/store.js?v=20261017h"></script>
+  <script src="./js/charts.js?v=20261017h"></script>
+  <script src="./js/avatar3d.js?v=20261017h"></script>
+  <script src="./js/views.js?v=20261017h"></script>
+  <script src="./js/views2.js?v=20261017h"></script>
+  <script src="./js/app.js?v=20261017h"></script>
+</body>
+</html>
